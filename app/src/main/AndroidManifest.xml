@@ -17,5 +17,25 @@
             </intent-filter>
         </activity>
     </application>
+    
+    
+    
+    <!--各デバイスのパーミッション、使用権限-->
 
+    <!--GPSのパーミッション-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--ネットワーク経由による位置情報取得のパーミッション-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    
+    <!--カメラの使用権限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--保存時の書き込み権限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--カメラハードウェアを使う-->
+    <uses-feature android:name="android.hardware.camera" />
+    <!--カメラのオートフォーカス機能を使う-->
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!--カメラフラッシュ（LEDライト）機能を使う-->
+    <uses-feature android:name="android.hardware.camera.flash" />
 </manifest>
